@@ -1,0 +1,181 @@
+** All Interview Questions on React JS
+
+* Easy Level -
+Q. What is react?  (4)
+Q. What are the advantages of using React?
+Q. What are the major features of React?
+Q. What are the limitations of React? (2)
+Q. Why we use react? (2)
+Q. Why is react fast?
+Q. what is a single page application? (2)
+Q. React, is it framework or library?
+Q. Why we use redux?  (2)
+Q. What are diff key things of redux? (2)
+Q. Why react is diff then other framework? (2)
+Q. Why we use js? (2)
+Q. What is JSX? (8)
+Q. what is JSX in reactjs?
+Q. Why we use jsx?  (2)
+Q. does the browser understand JSX directly ? 
+Q. Can web browsers read JSX directly?
+Q. DOM?
+Q. what is virtualDOM? explain the same (11)
+Q. Describe about Virtual Dom and real DOM? 
+Q. What is diff between real vs virtual dom. (2)
+Q. library vs framework
+Q. What is web development? (2)
+Q. How do we create react apps? (2)
+Q. How to create components in React?
+Q. What is the difference between Element and Component?
+Q. what is React Api used under the hood?
+Q. What are callback functions?
+Q. Inline Conditional Expression - Example
+Q. npm vs npx ? 
+Q. What is meant by data flow is unidirectional in react?
+Q. reconciliation process (2)
+Q. what is state?
+Q. what is useState()
+Q. What is state lifting?
+Q. What is the purpose of callback function as an argument of setState()?
+Q. what is state and props in react application? (4)
+Q. What is prop drilling? (2)
+Q. Prop drilling and its disadvantage and how we can get rid of this
+Q. what are differences between state and props? (9)
+Q. How does it(props and state) helps to improve performance? (2)
+Q. pass props b/w the component?
+Q. How to pass props from children to parent?
+Q. What is the difference between state and props?
+Q. can we update the state directly?
+Q. Why should we not update the state directly?
+Q. What are key props in react?
+Q. why is the "key" prop used in lists in react js?
+Q. What is ""key"" prop and what is the benefit of using it in
+   arrays of elements?
+Q. Explain about Components in React ? (3)
+Q. What are the types of components in React? (3)
+Q. What are controlled components?
+Q. What are uncontrolled components?
+Q. difference between a Controlled and an Uncontrolled one in React? (3)
+Q. What are Pure Components?  (4)
+Q. What is diff between pure and impure component? (2)
+Q. What is a higher-order component(HOCs) in React? (6)
+Q. What are higher-order components (HOCs) used for?
+Q. How can you embed two or more components into one?
+Q. What are the different ways to style a React component?
+Q. What are the differences between class and functional components? (6)
+Q. When to use a Class Component over a Function Component?
+Q. why do we use className instead of class in react js?
+Q. What are fragments in react (4)
+Q. What do you mean by unidirectional?
+Q. What are the features of React?
+Q. What is the difference between the ES5 and ES6 standards?
+Q. what do you mean by rendering?
+Q. what do you mean by re-rendering?
+Q. What are the things that can cause re-render of your state
+Q. what is conditional rendering?
+Q. What is the use of render() in React?
+Q. Wrote a class based component and asked to convert into function component
+        class Fun(){
+        componentDidMount(){
+        function doSomething(){
+        console.log(4);
+        }
+        fun();
+        }
+
+        render(){
+        return <>Fun</>
+        }
+        }
+Q. What would you do if your React application is rendering slowly?
+Q. Explain the lifecycle methods of components. (7)
+Q. life cycle component Phases?
+Q. methods inside mounting phase ?
+Q. What are the different lifecycle methods in React? (2)
+Q. what is meant by when I say *componentDidMount* is a lifecycle method? 
+   Basically what are lifecycle methods
+Q. What are hooks in react? Can you name any hook that we frequently use ? (7)
+Q. Have you worked with Hooks, different type of hooks? (2)
+Q. name 2 hooks and explain 
+Q. What are useCallback hooks and useMemo hook?
+Q. What is spa ?   (2)
+Q. Stateful and Stateless components
+Q. What is diff between stateful vs stateless ?  (4)
+Q. What is routing in react? 
+Q. Have you worked with react-router?  (2)
+Q. How do we configure react router?  (2)
+Q. How  to share data across multiple component  (2)
+Q. What is contextapi? (2)
+Q. what are contextAPIs used for?  (3)
+Q. What are data types in js? (2)
+Q. What is diff null & undefined? (2)
+Q. What is object? (2)
+Q. Create a component to render below data in form of table.   (2)
+      const data = [
+      { name: "thing two", id: 1 ,  list = [ 'abc' , 'xyz'] },
+      { name: "thing one", id: 2,  list = [ 'abc' , 'xyz']},
+      { name: "thing Three", id 3,  list = [ 'abc' , 'xyz']}
+      ]
+Q. What all ways data can be passed between react components   
+Q. What is the difference between cloneElement and createElement?
+Q. Can you conditionally add attributes to components in React?
+Q. what are keys?
+Q. what is propDrilling?
+Q. what is useEffect used for?
+Q. explain spread operator
+Q. What are refs? (2)
+Q. What is the use of refs?
+Q. How to create refs?
+Q. how to create a react application and requirements?
+Q. what things do you see things when you first create react application?
+Q. what is the package.json and node modules file consist of
+Q. index.js in react application
+Q. how do you handle an event in react js? (2)
+Q. What is the difference between HTML and React event handling?
+Q. What are synthetic events in React?
+Q. how do you pass data from child to parent, and child to a child?
+Q. Use of constructor?
+Q. What is the purpose of using super constructor
+Q. Fetch data from API = 
+const url = ""https://jsonplaceholder.typicode.com/users/1""; 
+Q. What are Portals?
+Q. What are error boundaries?
+
+
+
+
+
+
+
+
+
+
+
+
+* Medium Level -
+
+
+
+* Hard Level - 
+
+
+
+* Challenge Level - 
+
+
+* Coding Questions of Reaact Js
+Q. make two component and print name. (Easy)
+Q. Given to create Build a Simple Counter App in React. (Easy) (3)
+Q. create counter in consequtive sequense. (Easy)
+Q. Implement a page that contains an input field and a button, 
+   the user will input the color name and after  hitting the button, 
+   the page background color should be changed  (Easy)
+Q. Create a counter app with increment decrement and capture button, 
+    when the user clicks on increment count value increases by 1 
+    when you click on decrement count decreases by 1, and when you click on 
+    capture the current count would be added to the list and we have to 
+    maintain a list of captured value  (Easy)
+Q. Sum of Two Numbers coding implementation. (Easy)
+Q. Basic Implementation of React - Input Field value should be shown in Output
+    (Easy)
+
