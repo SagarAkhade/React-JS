@@ -1,71 +1,98 @@
 ** All Interview Questions on React JS
 
-* Easy Level -
-Q. What is react?  (4)
-Q. What are the advantages of using React?
+* Easy, Medium, Hard and Challenge Level -
+
+Q. What is react?  (10)
+Q. what is the current version of React (v18.0);
+Q. What are the advantages of using React? (3)
 Q. What are the major features of React?
 Q. What are the limitations of React? (2)
-Q. Why we use react? (2)
+Q. Why we use react? (3)
 Q. Why is react fast?
 Q. what is a single page application? (2)
 Q. React, is it framework or library?
 Q. Why we use redux?  (2)
 Q. What are diff key things of redux? (2)
 Q. Why react is diff then other framework? (2)
+Q. React, how different from plain js
 Q. Why we use js? (2)
-Q. What is JSX? (8)
+Q. What is JSX? (10)
 Q. what is JSX in reactjs?
-Q. Why we use jsx?  (2)
-Q. does the browser understand JSX directly ? 
+Q. Why we use jsx?  (3)
+Q. Can I write if else condition in JSX?
+Q. What is JSX and What is the relation of JSX with React.createElement ? (2)
+Q. does the web browser understand JSX directly ?  (2)
 Q. Can web browsers read JSX directly?
-Q. DOM?
-Q. what is virtualDOM? explain the same (11)
-Q. Describe about Virtual Dom and real DOM? 
+Q. How do you create elements in React without JSX?
+Q. DOM? (3)
+Q. what is virtualDOM? explain the same (22)
+Q. How Virtual DOM works? (2)
+Q. Why react maintains virtual dom (2)
+Q. Describe about Virtual Dom and real DOM?
+Q. shadow DOM?
 Q. What is diff between real vs virtual dom. (2)
 Q. library vs framework
 Q. What is web development? (2)
 Q. How do we create react apps? (2)
-Q. How to create components in React?
-Q. What is the difference between Element and Component?
+Q. How to create components in React? (2)
+Q. react element
+Q. Explain the default keyword in React.
+Q. What is the difference between Element and Component? (3)
 Q. what is React Api used under the hood?
 Q. What are callback functions?
-Q. Inline Conditional Expression - Example
+Q. Inline Conditional Expression - Example (2)
 Q. npm vs npx ? 
+Q. What is default in export statement?
 Q. What is meant by data flow is unidirectional in react?
-Q. reconciliation process (2)
+Q. What is the use of keys in react?
+Q. diffing algorithm?
+Q. reconciliation process (4)
 Q. what is state?
-Q. what is useState()
+Q. what is useState() (2)
+Q. setState() is async or sync in nature?
+Q. useEffect in react? (2)
 Q. What is state lifting?
+Q. lifting state up? (2)
 Q. What is the purpose of callback function as an argument of setState()?
-Q. what is state and props in react application? (4)
-Q. What is prop drilling? (2)
+Q. what is state and props in react application? (6)
+Q. Explain state management with state and props.
+Q. What is prop drilling? (5)
 Q. Prop drilling and its disadvantage and how we can get rid of this
-Q. what are differences between state and props? (9)
+Q. what are differences between state and props? (15)
 Q. How does it(props and state) helps to improve performance? (2)
 Q. pass props b/w the component?
+Q. Can we pass the state also as a props to the children components?
 Q. How to pass props from children to parent?
 Q. What is the difference between state and props?
 Q. can we update the state directly?
-Q. Why should we not update the state directly?
+Q. Why should we not update the state directly? (3)
 Q. What are key props in react?
 Q. why is the "key" prop used in lists in react js?
+Q. What is the significance of keys props in React ?
 Q. What is ""key"" prop and what is the benefit of using it in
-   arrays of elements?
-Q. Explain about Components in React ? (3)
+   arrays of elements?   (3) 
+Q. Explain about Components in React ? (4)
 Q. What are the types of components in React? (3)
 Q. What are controlled components?
 Q. What are uncontrolled components?
-Q. difference between a Controlled and an Uncontrolled one in React? (3)
-Q. What are Pure Components?  (4)
+Q. difference between a Controlled and an Uncontrolled one in React? (4)
+Q. What are Pure Components?  (6)
 Q. What is diff between pure and impure component? (2)
-Q. What is a higher-order component(HOCs) in React? (6)
+Q. What is a higher-order component(HOCs) in React?  when it is used ? (7)
 Q. What are higher-order components (HOCs) used for?
+Q. How do you create HOC?
 Q. How can you embed two or more components into one?
 Q. What are the different ways to style a React component?
-Q. What are the differences between class and functional components? (6)
+Q. What are the differences between class and functional components? (11)
+Q. How we update state in class components ? 
+Q. What are different phases of lifecycle in class component? 
+   Explain the usage of componentWillUnmount() lifecycle method?
+Q. Why React uses className over class attribute?
+Q. How to perform unmounting in functional component.
+Q. Create a simple class and function based component.
 Q. When to use a Class Component over a Function Component?
 Q. why do we use className instead of class in react js?
-Q. What are fragments in react (4)
+Q. What are fragments in react (7)
 Q. What do you mean by unidirectional?
 Q. What are the features of React?
 Q. What is the difference between the ES5 and ES6 standards?
@@ -74,6 +101,7 @@ Q. what do you mean by re-rendering?
 Q. What are the things that can cause re-render of your state
 Q. what is conditional rendering?
 Q. What is the use of render() in React?
+Q. What is the difference between server side render and client side render
 Q. Wrote a class based component and asked to convert into function component
         class Fun(){
         componentDidMount(){
@@ -88,25 +116,41 @@ Q. Wrote a class based component and asked to convert into function component
         }
         }
 Q. What would you do if your React application is rendering slowly?
-Q. Explain the lifecycle methods of components. (7)
+Q. Explain the lifecycle methods of components. (12)
 Q. life cycle component Phases?
 Q. methods inside mounting phase ?
-Q. What are the different lifecycle methods in React? (2)
+Q. What are the different lifecycle methods in React? (3)
 Q. what is meant by when I say *componentDidMount* is a lifecycle method? 
    Basically what are lifecycle methods
-Q. What are hooks in react? Can you name any hook that we frequently use ? (7)
+Q. Difference between shouldComponentUpdate and componentDidMount
+Q. Lifecycle methods in react. Best lifecycle method for making API calls? (2)
+Q. Can we use lifecycle methods in functional component?
+Q. What are hooks in react? Can you name any hook that we frequently use ? (13)
+Q. What are the rules of using hooks?
 Q. Have you worked with Hooks, different type of hooks? (2)
 Q. name 2 hooks and explain 
+Q. What is the need of useState() hook? Can you initialise the 
+   useState() hook with null value? (2)
+Q. useEffect hook (2)
+Q. Write syntax for useEffect hook.
+Q. Implement the useState and useEffect hooks?
+Q. What is dependency array in useEffect() hook?
+   Can we pass multiple state references in dependency array?
 Q. What are useCallback hooks and useMemo hook?
-Q. What is spa ?   (2)
+Q. What is SPA ?   (3)
 Q. Stateful and Stateless components
-Q. What is diff between stateful vs stateless ?  (4)
-Q. What is routing in react? 
-Q. Have you worked with react-router?  (2)
+Q. What is diff between stateful vs stateless ?  (5)
+Q. What is routing in react?  (2)
+Q. What is React Router? Why we use it? Why we use exact keyword in 
+   react router?
+Q. Have you worked with react-router? What is it?  (3)
 Q. How do we configure react router?  (2)
 Q. How  to share data across multiple component  (2)
-Q. What is contextapi? (2)
-Q. what are contextAPIs used for?  (3)
+Q. What is context?
+Q. What is contextApi? (3)
+Q. How you can share the data across the components? 
+   How to use the Context API?
+Q. what are contextAPIs used for?  (4)
 Q. What are data types in js? (2)
 Q. What is diff null & undefined? (2)
 Q. What is object? (2)
@@ -120,17 +164,25 @@ Q. What all ways data can be passed between react components
 Q. What is the difference between cloneElement and createElement?
 Q. Can you conditionally add attributes to components in React?
 Q. what are keys?
-Q. what is propDrilling?
 Q. what is useEffect used for?
+Q. Explain useEffect? 
+Q. What is useCallback
 Q. explain spread operator
 Q. What are refs? (2)
 Q. What is the use of refs?
+Q. When do you need to use refs?
 Q. How to create refs?
+Q. What is useRef ? useRef Example (3)
+Q. What is useMemo ? 
+Q. working of useCallback() and useMemo() (2)
+Q. Difference between useMemo & useCallback hook?  (2)
 Q. how to create a react application and requirements?
 Q. what things do you see things when you first create react application?
 Q. what is the package.json and node modules file consist of
+Q. what is babel.
 Q. index.js in react application
 Q. how do you handle an event in react js? (2)
+Q. What are synthethic events?
 Q. What is the difference between HTML and React event handling?
 Q. What are synthetic events in React?
 Q. how do you pass data from child to parent, and child to a child?
@@ -140,42 +192,152 @@ Q. Fetch data from API =
 const url = ""https://jsonplaceholder.typicode.com/users/1""; 
 Q. What are Portals?
 Q. What are error boundaries?
+Q. Two way binding
+Q. What is dependency array?
+Q. How we can use style tag in React?
+Q. Map vs ForEach
+Q. How can we pass data from component A to component C with no child 
+   sibling relationship
+Q. what is event capturing and event bubbling
+Q. HTML Forms 		
+Q. ES6 functions
+Q. arrow functions
 
-
-
-
-
-
-
-
-
-
-
-
-* Medium Level -
-
-
-
-* Hard Level - 
-
-
-
-* Challenge Level - 
+ 
 
 
 * Coding Questions of Reaact Js
 Q. make two component and print name. (Easy)
-Q. Given to create Build a Simple Counter App in React. (Easy) (3)
+Q. Given to create Build a Simple Counter App in React. (Easy) (8)
+Q. Create a counter application using useState?  (Easy)
+Q. Create a increment and a decrement counter in React. (2) (Easy)
+Q. Implement timer component. (Easy)
 Q. create counter in consequtive sequense. (Easy)
+Q. Write a code to increment and decrement using hooks. (Easy)
 Q. Implement a page that contains an input field and a button, 
    the user will input the color name and after  hitting the button, 
    the page background color should be changed  (Easy)
+Q. Implement a use-case with 2 buttons - like/dislike on the react based UI
+   with one counter, on click of like button counter will increment 
+   and click of dislike will decrease counter data.  (Easy)
 Q. Create a counter app with increment decrement and capture button, 
     when the user clicks on increment count value increases by 1 
     when you click on decrement count decreases by 1, and when you click on 
     capture the current count would be added to the list and we have to 
-    maintain a list of captured value  (Easy)
+    maintain a list of captured value  (Easy)  (2)
 Q. Sum of Two Numbers coding implementation. (Easy)
 Q. Basic Implementation of React - Input Field value should be shown in Output
     (Easy)
+Q. Create a colour picker app. (Easy)
+Q. Can you make a colour picker in React which changes the background 
+   colour of the provided div?   (Easy)
+Q. make to do list app. (Easy)
+Q. Create logIn form. (Easy)
+Q. Create a button, Display Date and Time on click of that button. (Easy)
+Q. code to make two component one with list and another having heading.  (Easy)
+Q. Digital Clock. (Easy)
+Q. There is a three count state count A, count B and count C 
+   with enitial state 0, and a button (Click Me). so every 5th value of
+   count A, count B should be increase by one and every 10th value of 
+   count A, count C should be increase by one.   (Easy)
 
+Q. countdown  (Medium)
+Q. How to perform unmounting in functional component.  (Medium)
+   render it in a table. Following are the tasks defined
+   Tasks
+      1. Fetch the Posts data from the API endpoint -
+      https://jsonplaceholder.typicode.com/posts
+      2. Render the Posts data in the form of a table where the 
+      column names will be (id, title) 
+Q. Todo List (Medium) (2)
+Q. Create a basic application to add two numbers and get their sum (Medium)
+Q. Create a application having a input field we'll enter text in it   (Medium)
+   and will start clicking it should render the text in list as much 
+   time the button is clicked along with this we need delete functionality also
+Q. Open https://codesandbox.io/s/new and create a new React component with 
+   2 input fields, input1 and input2.
+   Users can type any number in either of these input fields. 
+   You need to ensure that (input2 minus input1) is equal to 1 always. 
+   Means if user type value 5 in input1 then input2 value should change to 6 
+   (to make input2 - input1 = 1). And similarly, if input2 value is 100 
+    then input1 value should change to 99. 
+   You need to just play around with input values
+   Note: In the UI only 2 input fields should be present. No button needed          (Medium)
+Q. Optimize ‘ABOVE’ by making it a stateless component. Means solve problem 1 
+   without using any state variable. You still need to play with input tags 
+   and values only.
+   Note: Don’t write vanilla JS like document.getElementById etc. 
+   Use react hooks here.  (Medium)
+Q. Create a table after fetching from the data. (Medium)
+Q. Create a customisable modal component.  (Medium)
+Q. Implement Calculator (addition, multiplication, devision, substraction
+   functionality)  (Medium + Hard)
+Q. character occurrence problem   (Medium)
+Q. incremental array problem    (Medium)
+Q. Implementation: Create a Student List with add & delete functionality (Medium)
+Q. Take the Name and Gender of the user and add it to the below list. 
+   Also, user can delete it.     (Medium)
+Q. Create  button after click the button should display the current time 
+   and update the time  (Medium)
+Q. Insert an input field where the user can enter any number 
+   and the increment and decrement should happen by that number. (Medium)
+Q. Code to show usage of list and rendering of lists in browser? (Medium)
+Q. create task component having task name, task desc, task status,
+   estimated hour.add task button -- add multiple tasks and display 
+   it in browser (Medium)
+Q. Implement the following form-handling using react i.e  
+   https://wbybv.csb.app/  (Medium)
+Q. Code a counter app in react by using child component and 
+   calling it in parent. (Medium)
+   
+Q. 1. Make an api call to the url: "https://fakestoreapi.com/products" 
+   to fetch a list of products 
+   Render the products (name,image and price) (Hard)
+Q. WAP to fetch API and print the data in table form (Hard)
+Q. Implement search bar.   (Hard)
+Q. 1. [{ "drugName":"Crocin Tablet", "drugId":"d1234", "in_stock":true,
+"drugSafety":"LASA" }, { "drugName":"Paracetamol", "drugId":"d1235", "in_stock":false, "drugSafety":"NARCOTIC" }, 
+   { "drugName":"Calpol", "drugId":"d1236", "in_stock":true , "drugSafety":"LASA" }, 
+   { "drugName":"Centrizine 50", "drugId":"d1237", "in_stock":true, "drugSafety":"HIGH RISK" }, 
+   { "drugName":"Calpol 80", "drugId":"d1238", "in_stock":false, "drugSafety":"HIGH RISK" }, 
+   { "drugName":"Paracetamol 500", "drugId":"d1230", "in_stock":true, "drugSafety":"NARCOTIC" }, 
+   { "drugName":"Calpol 50", "drugId":"d1239", "in_stock":false, "drugSafety":"LASA" }, 
+   { "drugName":"Paracetamol 40", "drugId":"d1233", "in_stock":false, "drugSafety":"NARCOTIC" } 
+]
+   1. display this list of drugs
+           2. Color it green if in_stock = true, color it red of in_stock = false
+           2. Put a filter option for example --  all, in_stock and out_of_stock  
+   3. delete option beside each drug -- solved    (Hard)
+Q. Make a to-do list with the following requirements
+   Title, Starting Date, priority: Low, Medium, High, Submit button.
+   The result list will be shown by Date wise (Hard)
+   
+Q. create a to-do application with following features - 
+   1. create an input box, to-do list and two buttons - 
+   one for adding task into list and second one for clearing the text in input 
+   2. create a remove button associated with each task to remove the 
+   task from to-do list 
+   3. when you refresh the page then tasks in to-do list should not be removed 
+   (Challenge)
+ 
+Q. Open https://codesandbox.io/s/new and create a new React component 
+   with 2 input fields, input1 and input2. Users can type any number in 
+   either of these input fields. You need to ensure that (input2 minus
+   input1) is equal to 1 always. Means if user type value 5 in input1 
+   then input2 value should change to 6 (to make input2 - input1 = 1).
+   And similarly, if input2 value is 100 then input1 value should 
+   change to 99. You need to just play around with input values  (Challenge)
+   Note: In the UI only 2 input fields should be present. No button needed
+ 
+Q. Create an autocomplete UI (like you must have seen search box on amazon
+   website homepage) which shows a list of suggestions based on text 
+   entered in the input field. List of suggestions should come just below 
+   the input field like in autocomplete UIs. For sample data, refer title 
+   rom API https://jsonplaceholder.typicode.com/albums/
+   Note: This would be a simple autocomplete UI with dropdown suggestion 
+   based on the text entered in the input field. Focus on fetching data 
+   and updating the UI based on input (Challenge)
+   
+Q. implement the following fucntionality i.e using react.
+   https://www.w3schools.com/w3css/tryw3css_templates_portfolio3.htim 
+   (Challenge)
