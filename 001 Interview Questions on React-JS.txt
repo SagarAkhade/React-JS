@@ -24,6 +24,7 @@ Q. What is JSX and What is the relation of JSX with React.createElement ? (2)
 Q. does the web browser understand JSX directly ?  (2)
 Q. Can web browsers read JSX directly?
 Q. How do you create elements in React without JSX?
+Q. why do we use className instead of class keyword as an Attribute in jsx?
 Q. DOM? (3)
 Q. what is virtualDOM? explain the same (22)
 Q. How Virtual DOM works? (2)
@@ -33,7 +34,12 @@ Q. shadow DOM?
 Q. What is diff between real vs virtual dom. (2)
 Q. library vs framework
 Q. What is web development? (2)
+Q. How will you implement lazy loading in react?
+Q. How to pass data from parent component to child component ? 
+Q. How can we pass data from component A to component C with no child sibling
+   relationship? 
 Q. How do we create react apps? (2)
+Q. How do we create react apps in local?  
 Q. How to create components in React? (2)
 Q. react element
 Q. Explain the default keyword in React.
@@ -66,8 +72,9 @@ Q. How to pass props from children to parent?
 Q. What is the difference between state and props?
 Q. can we update the state directly?
 Q. Why should we not update the state directly? (3)
+Q. What is use of key property in react?
 Q. What are key props in react?
-Q. why is the "key" prop used in lists in react js?
+Q. why is the "key" prop used in lists in react js? (2)
 Q. What is the significance of keys props in React ?
 Q. What is ""key"" prop and what is the benefit of using it in
    arrays of elements?   (3) 
@@ -88,7 +95,7 @@ Q. How we update state in class components ?
 Q. What are different phases of lifecycle in class component? 
    Explain the usage of componentWillUnmount() lifecycle method?
 Q. Why React uses className over class attribute?
-Q. How to perform unmounting in functional component.
+Q. How to perform unmounting in functional component. (2)
 Q. Create a simple class and function based component.
 Q. When to use a Class Component over a Function Component?
 Q. why do we use className instead of class in react js?
@@ -99,7 +106,7 @@ Q. What is the difference between the ES5 and ES6 standards?
 Q. what do you mean by rendering?
 Q. what do you mean by re-rendering?
 Q. What are the things that can cause re-render of your state
-Q. what is conditional rendering?
+Q. what is conditional rendering in react js?  (2)
 Q. What is the use of render() in React?
 Q. What is the difference between server side render and client side render
 Q. Wrote a class based component and asked to convert into function component
@@ -122,6 +129,8 @@ Q. methods inside mounting phase ?
 Q. What are the different lifecycle methods in React? (3)
 Q. what is meant by when I say *componentDidMount* is a lifecycle method? 
    Basically what are lifecycle methods
+Q. What is use of shouldComponentUpdate?
+Q. What is Difference between componentWillMount and componentDidMount? 
 Q. Difference between shouldComponentUpdate and componentDidMount
 Q. Lifecycle methods in react. Best lifecycle method for making API calls? (2)
 Q. Can we use lifecycle methods in functional component?
@@ -145,6 +154,8 @@ Q. What is React Router? Why we use it? Why we use exact keyword in
    react router?
 Q. Have you worked with react-router? What is it?  (3)
 Q. How do we configure react router?  (2)
+Q. How you will achieve routing in react and how you will achieve authorisation
+   in react?
 Q. How  to share data across multiple component  (2)
 Q. What is context?
 Q. What is contextApi? (3)
@@ -240,6 +251,8 @@ Q. There is a three count state count A, count B and count C
    with enitial state 0, and a button (Click Me). so every 5th value of
    count A, count B should be increase by one and every 10th value of 
    count A, count C should be increase by one.   (Easy)
+Q. Build a date and time show application. (Easy)
+
 
 Q. countdown  (Medium)
 Q. How to perform unmounting in functional component.  (Medium)
@@ -248,7 +261,7 @@ Q. How to perform unmounting in functional component.  (Medium)
       1. Fetch the Posts data from the API endpoint -
       https://jsonplaceholder.typicode.com/posts
       2. Render the Posts data in the form of a table where the 
-      column names will be (id, title) 
+      column names will be (id, title)  (2)
 Q. Todo List (Medium) (2)
 Q. Create a basic application to add two numbers and get their sum (Medium)
 Q. Create a application having a input field we'll enter text in it   (Medium)
@@ -311,6 +324,11 @@ Q. 1. [{ "drugName":"Crocin Tablet", "drugId":"d1234", "in_stock":true,
 Q. Make a to-do list with the following requirements
    Title, Starting Date, priority: Low, Medium, High, Submit button.
    The result list will be shown by Date wise (Hard)
+Q. Create 2 input fields, 2 checkboxes (only one should be selectable)
+   Create 2 buttons, 1 is submit (pale green coloured) and 1 is reset 
+   (black coloured) When you click on submit, you've to show the values of
+   input fields and checkboxvalue in browser console.
+   When you click on reset, everything have to be reset (Hard)
    
 Q. create a to-do application with following features - 
    1. create an input box, to-do list and two buttons - 
