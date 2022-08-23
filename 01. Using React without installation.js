@@ -36,7 +36,7 @@
 
         // Class Component :-
         // Syntax: class NameOfClass extends React.Component{
-        //     render(){return 'stateme'}
+        //     render(){return 'statement'}
         // }
         class Hello extends React.Component {
             render() {
