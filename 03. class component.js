@@ -6,6 +6,7 @@
 //- We can consume this class component in other file as HTML tag like <NameOfFile />
 /*
 Syntax :
+import React,{Component} from "react";
 class NameOfFile extends Component{
     render(){
         return (
