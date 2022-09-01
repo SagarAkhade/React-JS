@@ -4,6 +4,7 @@
 // controlled and uncontrolled components  
 
 // Functional Component ->
+// - Functional componenets are used mostly.
 // - File name in React always starts with capital letters (PascalCase)
 // - The file name and the function name should be exactly same
 // - And to use this component in other file just do like this below 
