@@ -1,5 +1,6 @@
 //Props with Function component in React ->>
-// - props are basically properties
+// - props are basically properties(but not compulsory)
+// - When we want transfer data from one component to other props are used
 // - Here we passed on parameter as props for functional component
 // - This props are coming from other file where we use this functional component 
 // - props is object
