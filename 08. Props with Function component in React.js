@@ -7,6 +7,7 @@
 // - props are used for dynamic data 
 // - for accessing props just do like this 
 //      Syntax :    {props.propertyName}
+// - Interview Q : Props can be only change in parent component where we passing props and not in child component 
 // **This file for functional component using props which we export**
 
 function Student(props) {
