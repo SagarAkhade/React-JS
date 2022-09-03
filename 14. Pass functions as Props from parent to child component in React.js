@@ -26,3 +26,35 @@ function App() {
 }
 
 export default App;
+
+/*------------------------------*/
+// Continued Pass functions as Porps ->>
+
+/*This is child component */
+
+function User(props) {
+    return (
+        <div>
+            <h1>User Component</h1>
+            <button onClick={props.data}>Call Data function</button>
+        </div>
+    )
+}
+
+export default User;
+
+/*--------------------------------*/
+// Continued Pass functions as Porps ->>
+
+/*This is child component */
+
+function Members(props) {
+    return (
+        <div>
+            <h1>User Component</h1>
+            <button onClick={props.data}>Call Data function</button>
+        </div>
+    )
+}
+
+export default Members;
