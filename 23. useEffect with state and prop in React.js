@@ -44,3 +44,31 @@ function App() {
 }
 
 export default App;
+
+/*-----------------------------*/
+// Continued useEffect with state and prop ->>
+
+/*This is child component */
+
+import React, { useEffect } from 'react';
+
+function User(props) {
+
+    useEffect(() => {   // This useEffect invoked when data or count updated
+        console.log("useEffect called with data props or count props is updated")
+    }, [props.data, props.count])
+
+    return (
+        <div className="App">
+            <h1>User Component for props</h1>
+            <h1>Count Props : {props.count}</h1>
+            <h1>Data Props : {props.data}</h1>
+
+        </div>
+    )
+}
+
+export default User;
+
+
+
