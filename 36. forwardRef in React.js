@@ -7,6 +7,7 @@
 // - In the child component import forwardRef as below
 //      Syntax : import React, { forwardRef } from 'react';
 // - forwardRef is basically wraper for the child component and while exporting that child component use like this below
+// and this same for both function and class child component
 //    Synatax : export default forwardRef(User);
 // - And useRef coming from the parent component is used in child component in the second parameter of function as below this
 // Syntax : function User(props, inputRef) {}
