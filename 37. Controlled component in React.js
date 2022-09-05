@@ -8,7 +8,7 @@
 //    Syntax : <input type="text" value={val} onChange={(e) => setVal(e.target.value)} />
 // - In input field we can set default value to input field using below 
 //    Syntax : <input type="text" defaultValue="000" onChange={(e) => setVal(e.target.value)} />
-
+// - Controlled components are used with both functional and class component
 /* This is main parent component */
 
 import logo from './logo.svg';
