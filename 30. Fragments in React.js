@@ -3,6 +3,8 @@
 // - Components are basically which we create in different-different files
 // - Elements are basically the HTML tags Ex : <h1>,<div>, etc
 // - React fragment is used as wrapper, which wrapps all elemets and component in single in tag
+// - With fragments we cannot add className to it but can add keys
+// - Fragments are used in parent and component simultaneously
 // - React fragment is used with 3 ways  
 /*  1.  Syntax 
         <React.Fragment>
