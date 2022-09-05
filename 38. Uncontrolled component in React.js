@@ -6,6 +6,7 @@
 //    Syntax : import React, { useRef } from 'react';
 // - And getting these values from input field like this 
 //    Syntax:  <input ref={inputRef} type="text" /> <br />
+// - When we have some field are handled by state and some fields are handled by refs/DOM then it is Uncontrolled Component
 
 /* This is main parent component */
 
