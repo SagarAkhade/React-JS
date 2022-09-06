@@ -1,5 +1,5 @@
 // Routing Setup in React js ->>
-// - In Routing is basically we convert component to different-different pages and apply links on them
+// - Routing is basically we convert component to different-different pages and access them using links
 // - Rounting is converting components to different-different pages and link them using links 
 // so that we can render different pages in our React app
 // - For installing Routing setup go to google and type "react router"
@@ -8,21 +8,28 @@
 // - For using rounting we need to import like this below
 //    Syntax : import { BrowserRouter as Router } from 'react-router-dom'; 
 // - Now using the routing in parent component everyting inside this 
-/*
-  Syntax :  <BrowserRouter>
-              <Home />
-              <About />
-            </BrowserRouter>
+/* 
+Syntax :      <Router>
+                <Link to="/home" >Home Page</Link>
+                <br />
+                <Link to="/about" >About Page</Link>
+
+                <Routes>
+                  <Route path="/home" element={<Home />} />
+                  <Route path="/about" element={<About />} />
+                </Routes>
+
+              </Router>
 */
-// - Now we need to import linnks in react like below
+// - Now we need to import links in react like below
 //    Syntax : import { BrowserRouter as Router, Link  } from 'react-router-dom';
 // - Use of links are below
 //    Syntax : <Link to="/home" >Home Page</Link>
-// - Now we import the Route from react like this
-//  Syntax : import { BrowserRouter as Router, Switch, Link, Route, Routes } from 'react-router-dom';
+// - Now we import the Route and Routes from react like this
+//  Syntax : import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 // - Now for routing different pages use like this 
 /* Syntax : this is new feature in routing V6
-For using Routes first import it from react
+For using Routes first import it from react and all route components are wrap inside Routes
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -31,11 +38,10 @@ For using Routes first import it from react
 
 /* This is main parent component */
 
-
 import logo from './logo.svg';
 import './App.css';
 import { Table } from 'react-bootstrap'
-import { BrowserRouter as Router, Switch, Link, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
