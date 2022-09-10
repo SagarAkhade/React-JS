@@ -1,0 +1,180 @@
+Q. React hooks with examples
+Ans - There are several hooks in React 
+    - useState Hook : 
+        const [data, setData] = useState(0);
+    - useEffect hook :
+        - useEffect hook is for the all life cycle methods
+        - useEffect hook is invoked whenever there is update in state or props
+        - useEffect take the callback function
+        - Syntax : 
+            useEffect(() => {    //This is working as componentDidMount
+              console.log("useEffect");
+            })
+    - useMemo Hook :
+       - useMemo hook improves the performance of react app
+       - useMemo hook is similar as Pure component in class component
+       - useMemo take two parameters-> useMemo((callback fuction), [dataOnWhichToUpdate])
+       - Syntax: 
+          useMemo(() => {
+            console.log("useMemo");
+          }, [count])
+     - useRef Hook : 
+        - useRef is Hook which used to manpulate the DOM
+        - Whenever it is not possible to manipulate DOM using state or props and we need to directly manipulate DOM then useRef used
+        - Syntax : 
+           declaring useRef      :- let inputRef = useRef(anyDefaultValue);
+           Adding in input field :- <input type="text" ref={inputRef} />
+           Manipulating DOM :-
+                inputRef.current.value = "1000";  
+                inputRef.current.focus();   
+                inputRef.current.style.color = "red"  
+                inputRef.current.style.backgroundColor = "yellow"  
+
+Q. higher order components
+Ans - A component which take component as input and return the component is called as Higher Order Component(HOC).
+    - Example : 
+          function App() {
+            return (
+              <div className='App'>
+                <h1>HOC</h1>
+                <HOCRed cmp={Counter} />  {/*paasing component as props */}
+              </div>
+            )
+          }
+          // HOC component for red counter
+          function HOCRed(props) {
+            return (
+              <h2 style={{ backgroundColor: "red", width: 100 }}>Red<props.cmp /></h2>
+            )
+          }
+          // This is counter App
+          function Counter() {
+          const [count, setCount] = useState(0);
+          return (
+            <div>
+              <h3>{count}</h3>
+              <button style={{ fontSize: 20 }} onClick={() => setCount(count + 1)}>Update</button>
+            </div>
+          )
+        }
+
+Q. Controlled component and unControlled component
+Ans - Controlled component :-
+        - In react when we handle input fields with states is called as Controlled Component 
+        - Example :-
+              function App() {
+              let [val, setVal] = useState("000"); // initializing state with default value 000
+
+              return (
+                <div className='App'>
+                  <h1>Controlled Component </h1>
+                  {/* <input type="text" defaultValue="000" onChange={(e) => setVal(e.target.value)} /> */}
+                  <input type="text" value={val} onChange={(e) => setVal(e.target.value)} />
+
+                  <h3>Value: {val}</h3>
+                </div>
+              )
+            }
+     - Uncontrolled component :- 
+        - Input fields in uncontrolled component are handle either by JavaScript(DOM) or with Refs 
+        - Example : 
+          function App() {
+          let inputRef = useRef(null);  //initializing Ref
+
+          function submitForm(e) {
+            e.preventDefault();   // to prevent reloading of page on clicking submit
+            console.log(`Input field 1 value : ${inputRef.current.value}`)
+          }
+          return (
+            <div className='App'>
+              <h1>Uncontrolled Component </h1>
+
+              <form onSubmit={submitForm}>
+                {/* Controlling input field using the ref */}
+                <input ref={inputRef} type="text" /> <br />                
+                <button>Submit</button>
+              </form>
+            </div>
+          )
+        }
+
+Q. lifecycle of component?
+Ans - Every Component in ReactJS has life cycle methods
+    - Life Cycle method has 3 phases
+         o Mounting phase – Mounting phase is basically loading of component
+         o Updating phase – Updating phase is like we update props or state of component
+         o Unmounting phase – Unmounting phase is removing component completely
+    - componentDidMount life cycle method :-
+        - componentDidMount will be called after all HTML and DOM is ready
+        - componentDidMount is used for calling API's[Best Example]
+        - Syntax : 
+              componentDidMount() {
+                console.log("componentDidMount");
+              }
+    - componentDidUpadate life cycle method :-
+       - componentDidUpadate is executed after we update state or props
+       - Do not update state in componentDidUpadate, because it will go in loop again and again 
+       - componentDidUpdate has 3 parameters -> 
+           1. prevProps - shows the previous props
+           2. prevState - shows the previous state
+           3. snapshot  - It enables your component to capture some information from the DOM
+       - Syntax : 
+          componentDidUpdate(prevProps, prevState, snapshot) {
+            console.log("componentDidUpdate");
+            console.log(prevState);
+          }
+     - shouldComponentUpadate life cycle method :- 
+          - Using shouldComponentUpadate we can apply condition that when our component should update or not 
+          - shouldComponentUpadate can also stop rendering using some condition
+          - Syntax : shouldComponentUpdate in class component 
+                shouldComponentUpdate() {
+                  console.log("shouldComponentUpdate", this.state.count);
+                  if (this.state.count > 5 && this.state.count < 10) {
+                    return true;
+                  }
+                  return false;
+                }
+     - componentWillUnmount life cycle :-
+        - Whenever our component gets removed from the DOM then componentWillUnmount invoked
+
+Q. prop drilling 
+Ans - Prop drilling is basically a situation when the same data is being sent at almost every level due to requirements in the final level.
+    - Here is a below to demonstrate it better. Data needed to be sent from Parent to Child C
+    - Parent => Child A => Child B => Child c
+
+Q. error boundaries 
+Ans - Error Boundaries are provide to check errors
+    - They are React components that are used to handle JavaScript errors in their child component tree.
+    - It catches errors during rendering, in lifecycle methods
+    - Error boundaries help in removing these errors and display a Fallback UI
+    - Error Boundary works almost similar to catch in JavaScript
+    - Syntax :
+        componentDidCatch(error, errorInfo) {
+          // Catch errors in any components below and
+          // re-render with error message
+          this.setState({
+            error: error,
+            errorInfo: errorInfo
+        })
+Q. VDOM
+Ans - React uses Virtual DOM exists which is like a lightweight copy of the actual DOM
+    - So for every object that exists in the original DOM, there is an object for that in React Virtual DOM
+    - it does not have the power to directly change the layout of the document
+    - Manipulating DOM is slow, but manipulating Virtual DOM is fast as
+Q. events
+Ans - There are several Events in React such as 
+      onClick, onChange, onKeyPressDown, onKeyPressUp, etc
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
