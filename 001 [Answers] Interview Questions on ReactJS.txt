@@ -34,19 +34,31 @@ Q. Why we use jsx?  (3)
 Q. Can I write if else condition in JSX?
 Q. What is JSX and What is the relation of JSX with React.createElement ? (2)
 Q. does the web browser understand JSX directly ?  (2)
+Ans - No, the browser does not understand this JSX because it's not valid JavaScript code
 Q. Can web browsers read JSX directly?
+Ans - No
 Q. How do you create elements in React without JSX?
 Q. why do we use className instead of class keyword as an Attribute in jsx?
+Ans - the class is a reserved keyword in JavaScript and since we use JSX in React which itself is the extension of JavaScript
 Q. DOM? (3)
 Q. what is virtualDOM? explain the same (22)
+Ans - React uses Virtual DOM which is like a lightweight copy of the actual DOM.
+    - It is exactly the same as DOM, but it does not have the power to directly change the layout of the document.
+    - Manipulating DOM is slow, but manipulating Virtual DOM is fast as nothing gets drawn on the screen
+    - In virtual DOM, it first create the tree of components, and when we do changes in any component only that component is re-rendered.
 Q. How Virtual DOM works? (2)
+Ans - - In virtual DOM, it first create the tree of components, and when we do changes in any component only that component is re-rendered.
 Q. Why react maintains virtual dom (2)
+Ans - React uses Virtual DOM exists which is like a lightweight copy of the actual DOM
 Q. Describe about Virtual Dom and real DOM?
 Q. shadow DOM?
 Q. What is diff between real vs virtual dom. (2)
 Q. library vs framework
 Q. What is web development? (2)
 Q. How will you implement lazy loading in react?
+Ans - Code-splitting and lazy loading is a way to decreasing initial loading time to clients.
+    - Call const LazyLoadedComponent = React.lazy(() => import(‘./custom-component.js’)
+    - Use <LazyLoadedComponent />
 Q. How to pass data from parent component to child component ? 
 Q. How can we pass data from component A to component C with no child sibling
    relationship? 
@@ -55,6 +67,7 @@ Q. How do we create react apps in local?
 Q. How to create components in React? (2)
 Q. react element
 Q. Explain the default keyword in React.
+Ans - when you export a symbol as default, you don't need to specify its name
 Q. What is the difference between Element and Component? (3)
 Q. what is React Api used under the hood?
 Q. What are callback functions?
@@ -63,8 +76,11 @@ Q. npm vs npx ?
 Q. What is default in export statement?
 Q. What is meant by data flow is unidirectional in react?
 Q. What is the use of keys in react?
+Ans - Keys help React identify which items have changed, are added, or are removed
 Q. diffing algorithm?
 Q. reconciliation process (4)
+Ans - The reconciliation process makes React work faster.
+    - Reconciliation is the process through which React updates the Browser DOM
 Q. what is state?
 Q. what is useState() (2)
 Q. setState() is async or sync in nature?
@@ -75,6 +91,7 @@ Q. What is the purpose of callback function as an argument of setState()?
 Q. what is state and props in react application? (6)
 Q. Explain state management with state and props.
 Q. What is prop drilling? (5)
+Ans - Prop drilling is basically a situation when the same data is being sent at almost every level due to requirements in the final level.
 Q. Prop drilling and its disadvantage and how we can get rid of this
 Q. what are differences between state and props? (15)
 Q. How does it(props and state) helps to improve performance? (2)
@@ -136,6 +153,8 @@ Q. Wrote a class based component and asked to convert into function component
         }
 Q. What would you do if your React application is rendering slowly?
 Q. Explain the lifecycle methods of components. (12)
+Ans - Each component in React has a lifecycle which you can monitor and manipulate during its three main phases.
+    - The three phases are: Mounting, Updating, and Unmounting.
 Q. life cycle component Phases?
 Q. methods inside mounting phase ?
 Q. What are the different lifecycle methods in React? (3)
@@ -160,6 +179,8 @@ Q. What is dependency array in useEffect() hook?
 Q. What are useCallback hooks and useMemo hook?
 Q. What is SPA ?   (3)
 Q. Stateful and Stateless components
+Ans - a stateful component is a component that holds some state. 
+    - Stateless components, by contrast, have no state
 Q. What is diff between stateful vs stateless ?  (5)
 Q. What is routing in react?  (2)
 Q. What is React Router? Why we use it? Why we use exact keyword in 
