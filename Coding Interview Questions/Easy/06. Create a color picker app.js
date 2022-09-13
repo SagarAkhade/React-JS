@@ -37,7 +37,7 @@ function ColorPickerApp() {
 
     return (
         <div>
-            <h1>Color Picker - GeeksforGeeks</h1>
+            <h1>Color Picker</h1>
             <ColorPicker width={456} height={228} color={color} onChange={setColor} hideHSV dark />
         </div>
     )
