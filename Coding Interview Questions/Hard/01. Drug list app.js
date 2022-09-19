@@ -42,7 +42,8 @@ import { Table } from 'react-bootstrap';
 function DrugListApp() {
     var [drugs, setDrugs] = useState([
         {
-            "drugName": "Crocin Tablet", "drugId": "d1234", "in_stock": true, "drugSafety": "LASA"
+            "drugName": "Crocin Tablet", "drugId": "d1234", "in_stock": true,
+            "drugSafety": "LASA"
         },
         {
             "drugName": "Paracetamol", "drugId": "d1235", "in_stock": false, "drugSafety": "NARCOTIC"
@@ -66,12 +67,13 @@ function DrugListApp() {
             "drugName": "Paracetamol 40", "drugId": "d1233", "in_stock": false, "drugSafety": "NARCOTIC"
         }
     ])
-    
-    //need to work on this function for functionality
-    function deleteItem(i) {  
-        console.log(i);
 
-        setDrugs(drugs.slice(i, i + 1));
+    //need to work on this function for functionality
+    function deleteItem(i) {
+        const updatedList = drugs.filter((element, index) => {
+            return (i !== index)
+        })
+        setDrugs(updatedList); 
     }
     console.log(drugs)
     return (
