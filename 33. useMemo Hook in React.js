@@ -8,9 +8,8 @@
 //      Syntax : import React,{ useMemo } from 'react';
 // - useMemo take two parameters-> useMemo((callback fuction), [dataOnWhichToUpdate])
 /* Syntax: 
-      const multiCountMemo = useMemo(() => {
-        console.log("multiCount")
-        return count * 5;
+      useMemo(()=>{
+         alert('useMemo called' + count);
       }, [count])
 */
 // - using useMemo we can avoid unwanted re-rendering of component 
