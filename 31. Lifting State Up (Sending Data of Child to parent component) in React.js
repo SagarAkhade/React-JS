@@ -1,4 +1,4 @@
-// Lifting State Up (Send Data Child to parent component) in React js ->>
+// Lifting State Up (Sending Data of Child to parent component) in React js ->>
 // - For passing the data from parent to child we simply used the props
 // - For passing data from child component to parent we create function in parent component
 // - And inside that function we use paramter to accessing the data coming from the child 
