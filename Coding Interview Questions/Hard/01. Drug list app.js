@@ -36,87 +36,104 @@ export default App;
 /*---------------------------*/
 /* This is child component */
 
-import { useState, useEffect } from 'react';
-import { Table } from 'react-bootstrap';
+import React from 'react'
+import { useState } from 'react'
+import { Table } from 'react-bootstrap'
 
 function DrugListApp() {
-    var [drugs, setDrugs] = useState([
-        {
-            "drugName": "Crocin Tablet", "drugId": "d1234", "in_stock": true,
-            "drugSafety": "LASA"
-        },
-        {
-            "drugName": "Paracetamol", "drugId": "d1235", "in_stock": false, "drugSafety": "NARCOTIC"
-        },
-        {
-            "drugName": "Calpol", "drugId": "d1236", "in_stock": true, "drugSafety": "LASA"
-        },
-        {
-            "drugName": "Centrizine 50", "drugId": "d1237", "in_stock": true, "drugSafety": "HIGH RISK"
-        },
-        {
-            "drugName": "Calpol 80", "drugId": "d1238", "in_stock": false, "drugSafety": "HIGH RISK"
-        },
-        {
-            "drugName": "Paracetamol 500", "drugId": "d1230", "in_stock": true, "drugSafety": "NARCOTIC"
-        },
-        {
-            "drugName": "Calpol 50", "drugId": "d1239", "in_stock": false, "drugSafety": "LASA"
-        },
-        {
-            "drugName": "Paracetamol 40", "drugId": "d1233", "in_stock": false, "drugSafety": "NARCOTIC"
-        }
-    ])
+    const [drugs, setDrugs] = useState(
+        [
+            { "drugName": "Crocin Tablet", "drugId": "d1234", "in_stock": true, "drugSafety": "LASA" },
+            { "drugName": "Paracetamol", "drugId": "d1235", "in_stock": false, "drugSafety": "NARCOTIC" },
+            { "drugName": "Calpol", "drugId": "d1236", "in_stock": true, "drugSafety": "LASA" },
+            { "drugName": "Centrizine 50", "drugId": "d1237", "in_stock": true, "drugSafety": "HIGH RISK" },
+            { "drugName": "Calpol 80", "drugId": "d1238", "in_stock": false, "drugSafety": "HIGH RISK" },
+            { "drugName": "Paracetamol 500", "drugId": "d1230", "in_stock": true, "drugSafety": "NARCOTIC" },
+            { "drugName": "Calpol 50", "drugId": "d1239", "in_stock": false, "drugSafety": "LASA" },
+            { "drugName": "Paracetamol 40", "drugId": "d1233", "in_stock": false, "drugSafety": "NARCOTIC" }
+        ]
+    )
+    const [filterDrungs, setFilterDrugs] = useState(1);
 
-    //need to work on this function for functionality
-    function deleteItem(i) {
-        const updatedList = drugs.filter((element, index) => {
-            return (i !== index)
+    function deleteDrugs(i) {
+        const updatedDrugList = drugs.filter((element, index) => {
+            return (i !== index);
         })
-        setDrugs(updatedList); 
+        setDrugs(updatedDrugList);
     }
-    console.log(drugs)
+
+
     return (
         <>
-            <h1>Drug Store</h1>
-            <Table variant='dark' hover>
+            <h1>Drugs Store </h1>
+
+            <button onClick={() => setFilterDrugs(1)}>All</button>
+            <button onClick={() => setFilterDrugs(2)}>In Stock</button>
+            <button onClick={() => setFilterDrugs(3)}>Out of Stock</button>
+
+            <Table variant='dark'>
                 <thead>
                     <tr>
                         <th>Sr. No.</th>
-                        <th>Drug Name</th>
-                        <th>Drung ID</th>
-                        <th>Drug Safety</th>
-                        <th>Delete</th>
+                        <th>drugName</th>
+                        <th>drugId</th>
+                        <th>drugSafety</th>
+                        <th>Delete From List </th>
                     </tr>
                 </thead>
                 <tbody>
                     {
-                        drugs.map((item, i) =>
-                            <tr key={i}>{
-                                item.in_stock === true ?
-                                    <>
-                                        <td style={{ backgroundColor: "green" }}>{i + 1}</td>
-                                        <td style={{ backgroundColor: "green" }}>{item.drugName}</td>
-                                        <td style={{ backgroundColor: "green" }}>{item.drugId}</td>
-                                        <td style={{ backgroundColor: "green" }}>{item.drugSafety}</td>
-                                        <td><button onClick={(e) => deleteItem(i)}>Delete</button></td>
-                                    </> :
-                                    <>
-                                        <td style={{ backgroundColor: "red" }}>{i + 1}</td>
-                                        <td style={{ backgroundColor: "red" }}>{item.drugName}</td>
-                                        <td style={{ backgroundColor: "red" }}>{item.drugId}</td>
-                                        <td style={{ backgroundColor: "red" }}>{item.drugSafety}</td>
-                                        <td><button onClick={(e) => deleteItem(i)}>Delete</button></td>
-                                    </>
-                            }
-                            </tr>
-                        )
+                        drugs.map((element, i) => {
+                            return (
+                                <tr key={i}>
+                                    {
+                                        filterDrungs === 1 ?
+                                            element.in_stock === true ?
+                                                <>
+                                                    <td style={{ backgroundColor: "green" }}>{i + 1}</td>
+                                                    <td style={{ backgroundColor: "green" }}>{element.drugName}</td>
+                                                    <td style={{ backgroundColor: "green" }}>{element.drugId}</td>
+                                                    <td style={{ backgroundColor: "green" }}>{element.drugSafety}</td>
+                                                    <td><button onClick={() => deleteDrugs(i)}>Delete</button></td>
+                                                </>
+                                                :
+                                                <>
+                                                    <td style={{ backgroundColor: "red" }}>{i + 1}</td>
+                                                    <td style={{ backgroundColor: "red" }}>{element.drugName}</td>
+                                                    <td style={{ backgroundColor: "red" }}>{element.drugId}</td>
+                                                    <td style={{ backgroundColor: "red" }}>{element.drugSafety}</td>
+                                                    <td><button onClick={() => deleteDrugs(i)}>Delete</button></td>
+                                                </>
+                                            :
+                                            filterDrungs === 2 ?
+                                                element.in_stock === true ?
+                                                    <>
+                                                        <td style={{ backgroundColor: "green" }}>{i + 1}</td>
+                                                        <td style={{ backgroundColor: "green" }}>{element.drugName}</td>
+                                                        <td style={{ backgroundColor: "green" }}>{element.drugId}</td>
+                                                        <td style={{ backgroundColor: "green" }}>{element.drugSafety}</td>
+                                                        <td><button onClick={() => deleteDrugs(i)}>Delete</button></td>
+                                                    </> : null
+                                                :
+                                                filterDrungs === 3 ?
+                                                    element.in_stock === false ?
+                                                        <>
+                                                            <td style={{ backgroundColor: "red" }}>{i + 1}</td>
+                                                            <td style={{ backgroundColor: "red" }}>{element.drugName}</td>
+                                                            <td style={{ backgroundColor: "red" }}>{element.drugId}</td>
+                                                            <td style={{ backgroundColor: "red" }}>{element.drugSafety}</td>
+                                                            <td><button onClick={() => deleteDrugs(i)}>Delete</button></td>
+                                                        </> : null
+                                                    : null
+                                    }
+                                </tr>
+                            )
+                        })
                     }
                 </tbody>
             </Table>
         </>
     )
-
 }
 
 export default DrugListApp;
