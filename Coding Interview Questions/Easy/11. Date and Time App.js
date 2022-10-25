@@ -1,8 +1,5 @@
 /* 
-Q.  There is a three count state count A, count B and count C 
-   with initial state 0, and a button (Click Me). so every 5th value of
-   count A, count B should be increase by one and every 10th value of 
-   count A, count C should be increase by one
+Q.  Date and Time App
 */
 import logo from './logo.svg';
 
