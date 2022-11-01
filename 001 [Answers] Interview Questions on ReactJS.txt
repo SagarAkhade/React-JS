@@ -37,6 +37,8 @@ Q. does the web browser understand JSX directly ?  (2)
 Ans - No, the browser does not understand this JSX because it's not valid JavaScript code
 Q. Can web browsers read JSX directly?
 Ans - No
+Q. What is Babel?
+Ans - Babel is transpiler[to translate the code] which convert the latest version of JavaScript code into the one that the browser understands 
 Q. How do you create elements in React without JSX?
 Q. why do we use className instead of class keyword as an Attribute in jsx?
 Ans - the class is a reserved keyword in JavaScript and since we use JSX in React which itself is the extension of JavaScript
